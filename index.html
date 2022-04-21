@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link ref="stylesheet" href="style.css">
         <style type="text/css">
             div.dice {
-    float: left;
-    width: 40px;
-    background: black;
-    border: black 1px solid;
-    padding: 10px;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    margin: 5px;
-    border-radius: 10px;
-}
+                float: left;
+                width: 40px;
+                background: black;
+                border: black 1px solid;
+                padding: 10px;
+                font-size: 24px;
+                color: white;
+                text-align: center;
+                margin: 5px;
+                border-radius: 10px;
+            }
         </style>
         <script src="script.js"></script>
     </head>
@@ -26,6 +27,8 @@
         <div id="die6" class="dice">0</div>
         <button onclick="rollDice()">Roll Dice</button>
         <h2 id="status" style="clear:left";></h2>
+
+        <h3>Drop the two lowest rolls! Use the other rolls as you want.</h3>
 
     </body>
 </html>
