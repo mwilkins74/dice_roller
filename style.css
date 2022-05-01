@@ -1,5 +1,6 @@
 body {
     background: grey;
+
 }
 
 #logo {
@@ -34,7 +35,7 @@ h1 {
     margin: 2px;
 }
 
-#class {
+#playing {
     position: absolute;
     right: 80px;
     top: 80 px;
@@ -46,6 +47,23 @@ h1 {
     background-color: white;
     color: black;
 }
+
+.playingClass {
+    padding: 5px;
+    height: 30px;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    font-family: fantasy;
+    color: black
+}
+
 
 #die1  {
     position: absolute;

@@ -27,25 +27,29 @@ function rollDice() {
     
 }
 
-
-const classes = {
-    '1' : 'Artificer',
-    '2' : 'Barbarian',
-    '3' : 'Bard',
-    '4' : 'Cleric',
-    '5' : 'Druid',
-    '6' : 'Fighter',
-    '7' : 'Monk',
-    '8' : 'Paladin',
-    '9' : 'Ranger',
-    '10': 'Rogue',
-    '11': 'Sorcerer',
-    '12': 'Warlock',
-    '13': 'Wizard',
-}
-
 function randomClass() {
-    const num1 = Math.floor(Math.random()* (13) + 1);
- return `You will be playing a ${classes}`;
+    const classes = [
+        'Artificer',
+        'Barbarian',
+        'Bard',
+        'Cleric',
+        'Druid',
+        'Fighter',
+        'Monk',
+        'Paladin',
+        'Ranger',
+        'Rogue',
+        'Sorcerer',
+        'Warlock',
+        'Wizard',
+    ]
+    let roles = classes[Math.floor(Math.random() * classes.length)];
+
+    document.getElementById("playing").innerHTML = roles
 }
-console.log(randomClass)
+
+const classOutput = document.getElementById('playing');
+
+function whatAmIPlaying() {
+    
+
